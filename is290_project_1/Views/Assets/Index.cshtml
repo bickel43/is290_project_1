@@ -1,0 +1,57 @@
+﻿@model IEnumerable<is290_project_1.Models.Asset>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.AssetLocation)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AssetName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AssetType)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AssetStock)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AssetPrice)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.AssetLocation)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AssetName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AssetType)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AssetStock)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AssetPrice)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.AssetID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.AssetID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.AssetID })
+        </td>
+    </tr>
+}
+
+</table>

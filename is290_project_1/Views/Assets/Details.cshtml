@@ -1,0 +1,58 @@
+﻿@model is290_project_1.Models.Asset
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Asset</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.AssetLocation)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AssetLocation)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AssetName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AssetName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AssetType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AssetType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AssetStock)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AssetStock)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AssetPrice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AssetPrice)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.AssetID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
