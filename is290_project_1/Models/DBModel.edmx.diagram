@@ -8,7 +8,7 @@
         <EntityTypeShape EntityType="is290dbModel.Department" Width="1.5" PointX="0.75" PointY="1.5" IsExpanded="true" />
         <EntityTypeShape EntityType="is290dbModel.Employee" Width="1.5" PointX="4.125" PointY="0.5" IsExpanded="true" />
         <AssociationConnector Association="is290dbModel.FK_Employees_Departments1" ManuallyRouted="false" />
-        <EntityTypeShape EntityType="is290dbModel.Asset" Width="1.5" PointX="7.75" PointY="2" />
+        <EntityTypeShape EntityType="is290dbModel.Asset" Width="1.5" PointX="4.125" PointY="3.875" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
