@@ -14,6 +14,11 @@ namespace is290_project_1.Controllers
     {
         private is290dbEntities1 db = new is290dbEntities1();
 
+        public void FillEmployeeID()
+        {
+            
+        }
+
         // GET: Employees
         public ActionResult Index()
         {
