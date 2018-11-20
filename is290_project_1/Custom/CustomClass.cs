@@ -16,9 +16,7 @@ namespace is290_project_1.Custom
             int count = dbModel.Employees.Count();
 
         }
-        public void GetDepartmentID()
-        {
 
-        }
+        public bool ShowHiddenLinks { get; set; }
     }
 }

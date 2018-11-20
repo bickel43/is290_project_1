@@ -46,9 +46,9 @@ namespace is290_project_1
             app.UseTwoFactorRememberBrowserCookie(DefaultAuthenticationTypes.TwoFactorRememberBrowserCookie);
 
             // Uncomment the following lines to enable logging in with third party login providers
-            //app.UseMicrosoftAccountAuthentication(
-            //    clientId: "",
-            //    clientSecret: "");
+            app.UseMicrosoftAccountAuthentication(
+                clientId: "9ed9ee2b-1ba4-40c1-8a4b-542f83764772",
+                clientSecret: "sWi2SvVeiR42rPFcbbHx63piBxkIXjoRCgEAAWsZi3U=");
 
             //app.UseTwitterAuthentication(
             //   consumerKey: "",
